@@ -1,0 +1,114 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,600&display=swap");
+body {
+  font-family: "Playfair Display", serif;
+  background-color: #181818;
+  color: #ffffff;
+}
+
+.App {
+  width: 80%;
+  margin: auto;
+}
+
+header {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  letter-spacing: 0.04em;
+}
+
+section ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  border-bottom: 1px solid gray;
+  padding-bottom: 1rem;
+}
+
+section ul li {
+  list-style: none;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  align-content: center;
+  background-color: #3700fd;
+  width: 100px;
+  box-shadow: 1px 1px 10px rgb(216, 179, 179);
+  color: white;
+  padding: 0.5rem 0.8rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+section ul li:hover {
+  color: rgb(252, 252, 252);
+  background-color: #00dffd;
+}
+
+.info-card {
+  display: flex;
+  margin-top: 2rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  background-color: #181818;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  transition: box-shadow 250ms ease-in;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #aaa;
+  height: max-content;
+  transition: 0.5s;
+}
+
+.info-card:hover {
+  background-color: #212121;
+  box-shadow: 2px 4px 16px 0 rgb(255, 255, 255);
+}
+
+.image-card {
+  height: 200px;
+  width: 200px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.header-img {
+  height: 200px;
+  width: 300px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.content-card {
+  height: 100%;
+  width: auto;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  padding-left: 1rem;
+}
+
+.song-name {
+  color: #fff;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+.artist-name {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 700px) {
+  .info-card {
+    flex-direction: column;
+  }
+  .image-card {
+    width: 100%;
+    height: auto;
+  }
+}
